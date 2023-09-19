@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-Waste Form</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+
+    button[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: green;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+     <!-- header -->
+  <header>
+    <h1>Ministry of Environment</h1>
+    <h2>E-Waste Recycling Centre</h2>
+  </header>
+
+  <!-- navigation -->
+  <nav>
+    <div class="nav-heading">
+      <h2>Navigation</h2>
+    </div>
+    <ul>   
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#nearest-facility">Dashboard</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="submit.html">Submit E-Waste</a></li>
+      <li><a href="locate.html">Find Nearest Facility</a></li>
+      <li><a href="#educational-popup">Learn About E-Waste</a></li>
+      <li><a href="#device-input">Recycle Your Device</a></li>
+      <li><a href="#device-input">Certificates</a></li>
+    </ul>
+  </nav>
+<br>
+  <h1>E-Waste Form</h1>
+
+  <form id="ewaste-form">
+    <label for="ewaste-type">E-Waste Type:</label>
+    <input type="text" id="ewaste-type" name="ewaste-type" required>
+
+    <label for="ewaste-condition">Condition:</label>
+    <select id="ewaste-condition" name="ewaste-condition" required>
+      <option value="">Select Condition</option>
+      <option value="New">New</option>
+      <option value="Used">Used</option>
+      <option value="Old">Old</option>
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
